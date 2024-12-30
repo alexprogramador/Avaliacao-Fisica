@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="imc.js"></script>
+    <title>IMC e Cálculos de Gordura</title>
+</head>
+<body>
+    <form name="formulario">
+        <h2>IMC</h2>
+        Peso: <input type="text" name="peso"><br>
+        Altura: <input type="text" name="altura"><br>
+        <input type="button" value="Calcular IMC" onclick="calculaIMC();"><br>
+        <p id="imcResult"></p> <!-- Resultado do IMC será mostrado aqui -->
+
+        <h2>Dobras Cutâneas</h2> 
+        Tríceps: <input type="text" name="triceps"><br>
+        Suprailíaca: <input type="text" name="suprailiaca"><br>
+        Subescapular: <input type="text" name="subscapular"><br>
+        Abdominal: <input type="text" name="abdominal"><br>
+        <input type="button" value="Calcular G%" onclick="calculaG();"><br>
+        <p id="gorduraResult"></p> <!-- Resultado de gordura será mostrado aqui -->
+
+        <h2>Cálculos com Base no Percentual de Gordura</h2>
+        <input type="button" value="Calcular Peso de Gordura" onclick="calculaPG();"><br>
+        <p id="pgResult"></p> <!-- Resultado do Peso de Gordura será mostrado aqui -->
+
+        <input type="button" value="Calcular LBM" onclick="calculaLBM();"><br>
+        <p id="lbmResult"></p> <!-- Resultado de LBM será mostrado aqui -->
+
+        <input type="button" value="Calcular Peso Ideal" onclick="calculaPI();"><br>
+        <p id="piResult"></p> <!-- Resultado do Peso Ideal será mostrado aqui -->
+    </form>   
+</body>
+</html>
